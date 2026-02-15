@@ -94,26 +94,27 @@
         };
 
         Function-Win {
+            label = "F-Win";
+            display-name = "F-Win";
             bindings = <
-&kp GRAVE   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &msc SCRL_UP     &kp F6     &kp F7           &kp F8   &kp F9   &kp MINUS         &kp EQUAL
-&trans      &kp GRAVE        &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &msc SCRL_DOWN   &kp INS    &kp F10          &kp F11  &kp F12  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans      &kp TILDE        &trans          &trans           &trans           &mkp MB5           &msc SCRL_LEFT   &kp PG_UP  &rgb_ug RGB_BRI  &none    &none    &none             &none
-&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &msc SCRL_RIGHT  &kp PG_DN  &rgb_ug RGB_BRD  &none    &none    &none             &trans
-&kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans     &trans           &trans   &trans   &trans
+&kp GRAVE   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &msc SCRL_UP     &kp F6     &kp F7           &kp F8  &kp F9  &kp F10  &kp F11
+&trans      &kp GRAVE        &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &msc SCRL_DOWN   &kp PG_UP  &rgb_ug RGB_BRI  &trans  &trans  &kp INS  &kp F12
+&trans      &kp TILDE        &trans          &trans           &trans           &mkp MB5           &msc SCRL_LEFT   &kp PG_DN  &rgb_ug RGB_BRD  &trans  &trans  &trans   &trans
+&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &msc SCRL_RIGHT  &trans     &trans           &trans  &trans  &trans   &trans
+&kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans     &trans           &trans  &trans  &trans
             >;
 
-            display-name = "F-Win";
             sensor-bindings = <&inc_dec_kp LC(PLUS) LC(MINUS)>;
         };
 
         Function-Mac {
             display-name = "FKey";
             bindings = <
-&kp GRAVE   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &msc SCRL_UP     &kp F6     &kp F7           &kp F8   &kp F9   &kp MINUS         &kp EQUAL
-&trans      &kp GRAVE        &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &msc SCRL_DOWN   &kp INS    &kp F10          &kp F11  &kp F12  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans      &kp TILDE        &trans          &trans           &trans           &mkp MB5           &msc SCRL_LEFT   &kp PG_UP  &rgb_ug RGB_BRI  &none    &none    &none             &none
-&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &msc SCRL_RIGHT  &kp PG_DN  &rgb_ug RGB_BRD  &none    &none    &none             &trans
-&kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans     &trans           &trans   &trans   &trans
+&kp GRAVE   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &msc SCRL_UP     &kp F6     &kp F7           &kp F8  &kp F9  &kp F10  &kp F11
+&trans      &kp GRAVE        &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &msc SCRL_DOWN   &kp PG_UP  &rgb_ug RGB_BRI  &trans  &trans  &kp INS  &kp F12
+&trans      &kp TILDE        &trans          &trans           &trans           &mkp MB5           &msc SCRL_LEFT   &kp PG_DN  &rgb_ug RGB_BRD  &trans  &trans  &trans   &trans
+&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &msc SCRL_RIGHT  &trans     &trans           &trans  &trans  &trans   &trans
+&kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans     &trans           &trans  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LG(PLUS) LG(MINUS)>;
@@ -122,11 +123,11 @@
 
         Config {
             bindings = <
-&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &kp C_RW  &kp C_PLAY_PAUSE  &kp C_NEXT  &none      &kp MINUS         &kp EQUAL
-&trans     &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &trans    &trans            &kp F11     &kp F12    &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans     &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &mmv MOVE_LEFT   &trans    &trans            &trans      &trans     &none             &none
-&trans     &sys_reset    &trans          &bootloader   &trans        &trans          &mmv MOVE_RIGHT  &trans    &trans            &sys_reset  &soft_off  &bootloader       &trans
-&trans     &trans        &trans          &trans        &trans        &trans          &mkp LCLK        &trans    &trans            &trans      &trans     &trans
+&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &kp C_RW  &kp C_PLAY_PAUSE  &kp C_NEXT  &kp MINUS         &kp EQUAL          &trans
+&trans     &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &trans    &trans            &trans      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
+&trans     &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &mmv MOVE_LEFT   &trans    &trans            &trans      &trans            &trans             &trans
+&trans     &trans        &trans          &trans        &trans        &trans          &mmv MOVE_RIGHT  &trans    &trans            &trans      &trans            &trans             &trans
+&trans     &trans        &trans          &trans        &trans        &trans          &mkp LCLK        &trans    &trans            &trans      &trans            &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
