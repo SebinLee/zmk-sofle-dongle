@@ -104,7 +104,7 @@
 &kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans     &trans           &trans  &trans  &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(PLUS) LC(MINUS)>;
+            sensor-bindings = <&inc_dec_kp LC(EQUAL) LC(MINUS)>;
         };
 
         Function-Mac {
@@ -117,7 +117,7 @@
 &kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans     &trans           &trans  &trans  &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LG(PLUS) LG(MINUS)>;
+            sensor-bindings = <&inc_dec_kp LG(EQUAL) LG(MINUS)>;
             label = "F-Mac";
         };
 
